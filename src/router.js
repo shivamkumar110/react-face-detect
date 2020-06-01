@@ -1,18 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./containers/Home";
+import Home from "./containers/Home/Home";
+import { Provider } from "react-redux";
 
-const AppRouter = () => {
+const AppRouter = ({ store }) => {
   return (
-    <Router>
-      <div>
-        <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <div>
+          <Switch>
+            <Route path="/home">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </Provider>
   );
 };
 

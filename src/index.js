@@ -3,10 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import AppRouter from "./router";
+import store from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppRouter />
+    <AppRouter store={store} />
   </React.StrictMode>,
   document.getElementById("root")
 );
