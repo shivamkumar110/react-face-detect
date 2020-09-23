@@ -1,0 +1,27 @@
+
+.input-box-style{
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  &:hover{
+      border: 1px solid #111;
+  }
+  &:focus{
+      outline: none;
+  }
+}
+.input-box-error {
+	color: red;
+	input{
+		color: red;
+		border-color: red;
+		&:hover{
+			border-color: red;
+		}
+	}
+	.error-msg {
+		display: block;
+	}
+}

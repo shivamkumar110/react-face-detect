@@ -1,0 +1,76 @@
+.login-page-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // .login-center-content {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 10%;
+  //   transform: translate(-2%, -50%);
+  //   z-index: 1;
+  // }
+  .login-page-trasnform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    // transform: translate(-50%, -50%);
+    left: 0;
+    right: 0;
+  }
+
+  .login-card {
+    margin: 0 auto;
+    width: 340px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #eeeeee;
+    > a {
+      padding: 20px 0;
+      display: block;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+    &.card-width {
+      width: 290px;
+    }
+  }
+  .login-form {
+    padding: 30px 40px 45px 40px;
+    input {
+      float: none;
+    }
+    label {
+      font-weight: 200;
+      color: #666666;
+    }
+    .submitButton {
+      width: 260px;
+      height: 40px;
+      border-radius: 3px;
+      background-color: #f7931e;
+      border: solid 1px #f7931e;
+    }
+    .forget-link {
+      font-size: 14px;
+      font-weight: 300;
+      color: #008ac4;
+      cursor: pointer;
+    }
+    .reset-message {
+      font-size: 16px;
+      color: green;
+    }
+  }
+  .form-wrap {
+    margin-bottom: 10px;
+  }
+  .error-class {
+    color: red;
+    position: relative;
+    font-size: 13.4px;
+  }
+}
